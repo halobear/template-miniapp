@@ -1,0 +1,42 @@
+.my-dialog-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.5s;
+  visibility: hidden;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  &.center {
+    align-items: center;
+    .dialog-content {
+      opacity: 0;
+    }
+  }
+  &.bottom {
+    align-items: flex-end;
+    .dialog-content {
+      transform: translateY(100%);
+    }
+  }
+  &.visible {
+    visibility: visible;
+    opacity: 1;
+    &.center .dialog-content {
+      transition-timing-function: cubic-bezier(0.8, 0, 0, 1.5);
+      opacity: 1;
+    }
+    &.bottom {
+      .dialog-content {
+        transform: translateY(0);
+      }
+    }
+  }
+  .dialog-content {
+    position: relative;
+    transition: transform 0.3s, opacity 0.5s;
+  }
+}

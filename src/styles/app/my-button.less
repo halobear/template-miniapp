@@ -1,0 +1,58 @@
+.my-button-container {
+  border-radius: 45px;
+  width: 310px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  position: relative;
+  border: none;
+  &::after,
+  &::before {
+    border: none;
+    display: none !important;
+  }
+  &.orange {
+    background: linear-gradient(180deg, #ff9445, #fd6131);
+    box-shadow: 0px 8px 0px 0px #e33918;
+    color: white;
+    border-radius: 45px;
+    text-shadow: 0px 2px 8px rgba(140, 100, 34, 0.3);
+    &.active-class {
+      background: #fd6131;
+    }
+  }
+  &.yellow {
+    color: #62321d;
+    background: linear-gradient(180deg, rgba(255, 215, 113, 1), rgba(253, 191, 47, 1));
+    box-shadow: 0px 6px 0px 0px rgba(219, 123, 39, 1);
+    &.active-class {
+      background: rgba(253, 193, 49, 1);
+    }
+  }
+  &.blue {
+    color: white;
+    background: linear-gradient(180deg, rgba(59, 182, 253, 1), rgba(41, 141, 243, 1));
+    box-shadow: 0px 6px 0px 0px rgba(41, 107, 217, 1);
+    &.active-class {
+      background: rgba(41, 141, 243, 1);
+    }
+  }
+  &.red {
+    color: white;
+    background: linear-gradient(180deg, rgba(255, 113, 193, 1), rgba(253, 49, 130, 1));
+    box-shadow: 0px 6px 0px 0px rgba(227, 24, 100, 1);
+    &.active-class {
+      background: rgba(253, 49, 130, 1);
+    }
+  }
+  &.disabled {
+    background: #969696 !important;
+    box-shadow: 0 0 0 transparent !important;
+    border: none;
+    color: white !important;
+  }
+}
