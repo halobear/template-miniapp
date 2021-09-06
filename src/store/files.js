@@ -1,8 +1,3 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-
-Vue.use(Vuex)
-
 const state = {
   files: [],
   selectedFiles: []
@@ -26,7 +21,7 @@ const getters = {
   }
 }
 
-export default new Vuex.Store({
+export default ({
   state,
   mutations,
   actions,

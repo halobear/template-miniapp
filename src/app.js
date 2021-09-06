@@ -7,7 +7,7 @@ import './app.less'
 
 const App = new Vue({
   store,
-  onShow (options) {
+  onShow(options) {
   },
   render(h) {
     // this.$slots.default 是将要会渲染的页面

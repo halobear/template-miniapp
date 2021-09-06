@@ -1,7 +1,7 @@
 <template>
   <view class="logo-wrap center-flex">
     <image class="my-logo" :src="src" />
-    <view class="logo-text">慕容选片系统</view>
+    <view class="logo-text">logo</view>
   </view>
 </template>
 
